@@ -1,12 +1,4 @@
-# ptt_autologin
-PTT 每天自動登入
-
-:x: GitHub Actions 的執行環境無法連線到 ptt.cc 的 telnet 服務（port 23）
-
-- GitHub 的 Ubuntu runner 是跑在雲端資料中心（如 Azure），通常 port 23（Telnet）已被防火牆封鎖
-- telnet 屬於過時協議，不安全，雲平台常會預設封鎖
-
-參考 URL : https://tonytonyjan.net/2015/12/08/login-ptt-everyday-automatically/
+# PTT 每天自動登入
 
 
 ### 1. 安裝套件
@@ -45,3 +37,11 @@ crontab -e
 
 > 💡 每天早上 6:06 執行一次
 
+---
+
+:x: GitHub Actions 的執行環境無法連線到 ptt.cc 的 telnet 服務（port 23）
+
+- GitHub 的 Ubuntu runner 是跑在雲端資料中心（如 Azure），通常 port 23（Telnet）已被防火牆封鎖
+- telnet 屬於過時協議，不安全，雲平台常會預設封鎖
+
+參考 URL : https://tonytonyjan.net/2015/12/08/login-ptt-everyday-automatically/
